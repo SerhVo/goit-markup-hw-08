@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+  .page-header & {
+    display: flex;
+  }
+  @include mobile {
+    width: 480px;
+    margin: 0 auto;
+  }
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
+  .page-footer & {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    @include desktop {
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+}
