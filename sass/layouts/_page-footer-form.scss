@@ -14,18 +14,27 @@
     outline: none;
     border: 1px solid $color-accent;
   }
-    max-width: 450px;
-  
+
+  @media screen and (min-width: 320px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
   @include desktop {
     width: 358px;
     margin-bottom: 0;
     margin-right: 12px;
   }
 }
+
 .footer-form__icon {
   width: 100%;
   height: 100%;
 }
+
 .footer-form__container {
   @include desktop {
     display: flex;
@@ -33,6 +42,7 @@
     align-items: center;
   }
 }
+
 .footer-form__label {
   width: 24px;
   height: 24px;
