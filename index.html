@@ -179,26 +179,32 @@
         <h2 class="title">Чим ми займаємося</h2>
         <ul class="services__list">
           <li class="services__item">
-            <img class="services__images" srcset="./images/First1x.jpg 1x, ./images/first2x.jpg 2x"
-              src="./images/First1x.jpg" alt="крупний план-зображення-програміст-працюючий-його-робочий-офіс"
-              width="370" />
+            <picture>
+              <source srcset="./images/First1x.jpg 1x, ./images/first2x.jpg 2x" media="(min-width: 1200px)" />
+              <img class="services__images" src="./images/First1x.jpg"
+                alt="крупний план-зображення-програміст-працюючий-його-робочий-офіс" width="370" />
+            </picture>
             <div class="services__text--position">
               <p class="services__text">Десктопні додатки</p>
             </div>
           </li>
           <li class="services__item">
-            <img class="services__images" srcset="./images/second1x.jpg 1x, ./images/second2x.jpg 2x"
-              src="./images/second1x.jpg"
-              alt="веб-інтерфейс-дизайнери-розробляють-додаток-смартфони-команда-творці-працює-інтерфейс-мобільні телефони"
-              width="370" />
+            <picture>
+              <source srcset="./images/second1x.jpg 1x, ./images/second2x.jpg 2x" media="(min-width: 1200px)" />
+              <img class="services__images" src="./images/second1x.jpg"
+                alt="веб-інтерфейс-дизайнери-розробляють-додаток-смартфони-команда-творці-працює-інтерфейс-мобільні телефони"
+                width="370" />
+            </picture>
             <div class="services__text--position">
               <p class="services__text">Мобільні додатки</p>
             </div>
           </li>
           <li class="services__item">
-            <img class="services__images" srcset="./images/third1x.jpg 1x, ./images/third2x.jpg 2x"
-              src="./images/third1x.jpg" alt="креативний-художник-веб-дизайн-з-робочим-колір-графічним-планшетом"
-              width="370" />
+            <picture>
+              <source srcset="./images/third1x.jpg 1x, ./images/third2x.jpg 2x" media="(min-width: 1200px)" />
+              <img class="services__images" src="./images/third1x.jpg"
+                alt="креативний-художник-веб-дизайн-з-робочим-колір-графічним-планшетом" width="370" />
+            </picture>
             <div class="services__text--position">
               <p class="services__text">Дизайнерські рішення</p>
             </div>
@@ -213,9 +219,9 @@
         <ul class="advantages_list">
           <li class="advantages__item">
             <picture>
-              <source srcset="./images/IgorMobile.jpg 1x, ./images/IgorMobile2.jpg 2x" media="(min-width: 480px)" />
-              <source srcset="./images/IgorTablet.jpg 1x, ./images/IgorTablet2.jpg 2x" media="(min-width: 768px)" />
               <source srcset="./images/IgorDesktop.jpg 1x, ./images/IgorDesktop2.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/IgorTablet.jpg 1x, ./images/IgorTablet2.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/IgorMobile.jpg 1x, ./images/IgorMobile2.jpg 2x" media="(min-width: 480px)" />
               <img class="advantages__images" src="./images/IgorMobile.jpg" alt="photo of a man" width="450" />
             </picture>
             <div class="advantages__wrapper--icon">
@@ -255,9 +261,9 @@
           </li>
           <li class="advantages__item">
             <picture>
-              <source srcset="./images/olgamobile.jpg 1x, ./images/olgamobilex2.jpg 2x" media="(min-width: 480px)" />
-              <source srcset="./images/olgatablet.jpg 1x, ./images/olgatabletx2.jpg 2x" media="(min-width: 768px)" />
               <source srcset="./images/olgadesktop.jpg 1x, ./images/olgadesktopx2.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/olgatablet.jpg 1x, ./images/olgatabletx2.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/olgamobile.jpg 1x, ./images/olgamobilex2.jpg 2x" media="(min-width: 480px)" />
               <img class="advantages__images" src="./images/olgamobile.jpg" alt="photo of a women" width="450" />
             </picture>
             <div class="advantages__wrapper--icon">
@@ -298,17 +304,19 @@
           <li class="advantages__item">
             <picture>
               <source srcset="
+              ./images/mikoladesktop.jpg   1x,
+              ./images/mikoladesktopx2.jpg 2x
+            " media="(min-width: 1200px)" />
+              <source srcset="
+            ./images/mikolatablet.jpg   1x,
+            ./images/mikolatabletx2.jpg 2x
+          " media="(min-width: 768px)" />
+              <source srcset="
                   ./images/mikolamobile.jpg   1x,
                   ./images/mikolamobilex2.jpg 2x
                 " media="(min-width: 480px)" />
-              <source srcset="
-                  ./images/mikolatablet.jpg   1x,
-                  ./images/mikolatabletx2.jpg 2x
-                " media="(min-width: 768px)" />
-              <source srcset="
-                  ./images/mikoladesktop.jpg   1x,
-                  ./images/mikoladesktopx2.jpg 2x
-                " media="(min-width: 1200px)" />
+
+
               <img class="advantages__images" src="./images/mikolamobile.jpg" alt="photo of a man" width="450" />
             </picture>
             <div class="advantages__wrapper--icon">
@@ -349,17 +357,19 @@
           <li class="advantages__item">
             <picture>
               <source srcset="
-                  ./images/michalmobile.jpg   1x,
-                  ./images/michalmobilex2.jpg 2x
-                " media="(min-width: 480px)" />
+              ./images/michaldesktop.jpg   1x,
+              ./images/michaldesktopx2.jpg 2x
+            " media="(min-width: 1200px)" />
               <source srcset="
                   ./images/michaltablet.jpg   1x,
                   ./images/michaltabletx2.jpg 2x
                 " media="(min-width: 768px)" />
               <source srcset="
-                  ./images/michaldesktop.jpg   1x,
-                  ./images/michaldesktopx2.jpg 2x
-                " media="(min-width: 1200px)" />
+                  ./images/michalmobile.jpg   1x,
+                  ./images/michalmobilex2.jpg 2x
+                " media="(min-width: 480px)" />
+
+
               <img class="advantages__images" src="./images/michalmobile.jpg" alt="Михаил" width="450" />
             </picture>
             <div class="advantages__wrapper--icon">

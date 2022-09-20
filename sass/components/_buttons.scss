@@ -4,7 +4,7 @@
   border-radius: 4px;
   border-color: transparent;
   text-align: center;
-  padding: 10px 54px;
+  padding: 5px 27px;
   color: $color-main;
   font-weight: 700;
   font-size: 16px;
@@ -12,6 +12,11 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   font-family: inherit;
+
+@include mobile {
+  padding: 10px 54px;
+}
+
 
   .footer-form & {
     display: flex;
